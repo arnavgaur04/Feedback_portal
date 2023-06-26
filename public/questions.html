@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Physical education</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="questions.js" defer></script>
+</head>
+<body style="margin-top: 0;margin-right: 0;margin-left: 0;margin-bottom: 20px;font-family: 'Poppins', sans-serif;">
+    
+    <div class="top">
+        SHINE
+    </div>
+
+    <div class="middle">
+        <div class="container">
+            <div class="question" id="question">
+                
+            </div>
+            
+            <form method="get" id="task-form">
+                <div class="options">
+                    <div class="option one">
+                        <div><input type="radio" id="one" name="chosen" class="radio" value="1"></div>
+                        <div class="ONE opt" value="1"></div>
+                    </div>
+                    
+                    <div class="option two">
+                        <div><input type="radio" id="two" name="chosen" class="radio" value="2"></div>
+                        <div class="TWO opt" value="2"></div>
+                    </div>
+                    
+                    <div class="option three">
+                        <div><input type="radio" id="three" name="chosen" class="radio" value="3"></div>
+                        <div class="THREE opt" value="3"></div>
+                    </div>
+                    
+                    <div class="option four">
+                        <div><input type="radio" id="four" name="chosen" class="radio" value="4"></div>
+                        <div class="FOUR opt" value="4"></div>
+                    </div>
+                </div>
+                <div class="buttons" name="buttons">
+                    <button type="button" class="save" id="next">Save & next</button>
+                    <button type="button" class="save" id="save" style="display: none">Save</button>
+                    <button type="button" class="clear" id="clear" onclick="clear_options()">clear</button>
+                </div>
+            </form>
+            
+        </div>
+        
+        <div name="NUMBERS" class="NUMBERS">
+            <div name="numbers" id="numbers" class="numbers">
+            </div>
+
+            <button id="sub" class="submit" onclick="location.href = '/submit'">SUBMIT</button>
+        </div>
+    </div>
+
+
+</body>
+</html>

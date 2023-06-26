@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Set-B</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            background-color: rgb(255, 255, 255);
+            text-decoration-color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+ 
+<body>
+        <ol>
+            <% ques.forEach((item)=>{%>
+                <li>
+                    <table class="table table-hover table<%=item%>" id="table">
+                        <tr>
+                            <th><%=questions[item].question%></th>
+                            <th>Primary</th>
+                            <th>Secondary</th>
+                            <th>Higher Secondary</th>
+                            <th>Upper Primary</th>
+                        </tr>
+                        <tr>
+                            <td><%=questions[item].one%></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td><%=questions[item].two%></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td><%=questions[item].three%></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td><%=questions[item].four%></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+                    </table>
+                </li>
+                <br/>
+                <br/>
+                <br/>
+            <%});%>
+        </ol>
+
+    <script>
+        var test = "<%=JSON.stringify(varr)%>";
+        test = test.replaceAll("&#34;", '"');
+        console.log(JSON.parse(test));
+        test = JSON.parse(test);
+
+        $(document).ready(function(){
+            for (let i = 0; i < 10; i++) {
+                for (let j = 0; j < test[i].length; j++) {
+                    if (test[i][j].type == "Primary") {
+                        var k = test[i][j].ques - 1;
+                        k = 5*k + 1 + 20*i;
+                        document.querySelectorAll("td")[k].innerHTML = test[i][j].count;
+                        document.querySelectorAll("td")[k].style.fontWeight = 800;
+                    }
+
+                    else if (test[i][j].type == "Secondary") {
+                        var k = test[i][j].ques - 1;
+                        k = 5*k + 2 + 20*i;
+                        document.querySelectorAll("td")[k].innerHTML = test[i][j].count;
+                        document.querySelectorAll("td")[k].style.fontWeight = 800;
+                    }
+                    
+                    else if (test[i][j].type == "Higher Secondary") {
+                        var k = test[i][j].ques - 1;
+                        k = 5*k + 3 + 20*i;
+                        document.querySelectorAll("td")[k].innerHTML = test[i][j].count;
+                        document.querySelectorAll("td")[k].style.fontWeight = 800;
+                    }
+
+                    else if (test[i][j].type == "Upper Primary") {
+                        var k = test[i][j].ques - 1;
+                        k = 5*k + 4 + 20*i;
+                        document.querySelectorAll("td")[k].innerHTML = test[i][j].count;
+                        document.querySelectorAll("td")[k].style.fontWeight = 800;
+                    }
+                }
+            }
+        });
+
+    </script>
+
+        
+</body>
+</html>

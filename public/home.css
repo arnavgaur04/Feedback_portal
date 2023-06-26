@@ -1,0 +1,82 @@
+.top
+{
+    padding: 10px;
+    height: 70px;
+    width: calc(100%-10px);
+    background-color: rgb(52, 93, 138);
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.test
+{
+    margin-top: 7vh;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container
+{
+    height: 400px;
+    margin-top: 10vh;
+}
+
+.passcode
+{
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: 450px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+}
+
+.passcode_input
+{
+    height: 20px;
+    font-size: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 0;
+}
+
+.passcode_submit
+{
+    height: auto;
+    font-size: 12px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    background-color: rgb(52, 93, 138);
+    color: white;
+    border-radius: 5px;
+    border: 0;
+}
+
+.passcode_submit:hover
+{
+    background-color: rgb(61, 112, 167);
+}
+
+select
+{
+    /* height: 3px; */
+    /* margin-top: auto; */
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: auto;
+    max-width: 250px;
+    padding: 5px;
+}
