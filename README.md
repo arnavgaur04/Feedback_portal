@@ -31,8 +31,8 @@ Welcome to the School Feedback Portal! This web application is designed to gathe
 4. Set your database
 
 - DB_HOST=localhost
-- DB_USER=<your-database-username>
-- DB_PASSWORD=<your-database-password>
+- DB_USER="<your-database-username>"
+- DB_PASSWORD="<your-database-password>"
 - DB_NAME=feedback_portal
 
 5. Start the Server:
