@@ -19,7 +19,7 @@ Welcome to the School Feedback Portal! This web application is designed to gathe
 2. Install Dependencies:
 
     ```bash
-    cd Feedback_Portal
+    cd Feedback_portal
     npm install
 
 3. Database Setup:
@@ -30,10 +30,10 @@ Welcome to the School Feedback Portal! This web application is designed to gathe
 
 4. Set your database
 
-DB_HOST=localhost
-DB_USER=<your-database-username>
-DB_PASSWORD=<your-database-password>
-DB_NAME=feedback_portal
+- DB_HOST=localhost
+- DB_USER=<your-database-username>
+- DB_PASSWORD=<your-database-password>
+- DB_NAME=feedback_portal
 
 5. Start the Server:
 
@@ -44,3 +44,17 @@ DB_NAME=feedback_portal
 
 - Open your web browser and navigate to http://localhost:5000.
 - The application runs on port 5000 by default. You can access it at http://localhost:5000 in your web browser.
+
+## Reference Images: 
+
+### Home page
+![App Screenshot](https://github.com/arnavgaur04/Feedback_portal/blob/main/images/home.png)
+
+
+### Question page
+![App Screenshot](https://github.com/arnavgaur04/Feedback_portal/blob/main/images/question.png)
+
+
+### Review page
+![App Screenshot](https://github.com/arnavgaur04/Feedback_portal/blob/main/images/review.png)
+
